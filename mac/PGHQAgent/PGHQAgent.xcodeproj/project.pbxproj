@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646ED27424826D650042B11C /* liblog4cplus-2.0.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */; };
+		646ED27524826D650042B11C /* liblog4cplus-2.0.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		64EAD5832480293600F42016 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EAD5822480293600F42016 /* main.cpp */; };
-		64EAD58E24807EC900F42016 /* StandardServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EAD58D24807EC900F42016 /* StandardServer.cpp */; };
-		64EAD59024807ECF00F42016 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EAD58F24807ECF00F42016 /* TCPServer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		646ED27624826D650042B11C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				646ED27524826D650042B11C /* liblog4cplus-2.0.3.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64EAD57D2480293600F42016 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -25,11 +36,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		646ED27124826D510042B11C /* log4cplus */ = {isa = PBXFileReference; lastKnownFileType = folder; name = log4cplus; path = ../../../external/libs/log4cplus; sourceTree = "<group>"; };
+		646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liblog4cplus-2.0.3.dylib"; path = "../../../external/libs/log4cplus/liblog4cplus-2.0.3.dylib"; sourceTree = "<group>"; };
 		64EAD57F2480293600F42016 /* PGHQAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PGHQAgent; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EAD5822480293600F42016 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		64EAD58B24802BCF00F42016 /* shared_src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shared_src; path = ../../../shared_src; sourceTree = "<group>"; };
-		64EAD58D24807EC900F42016 /* StandardServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StandardServer.cpp; path = ../../shared_src/cmdserver/StandardServer.cpp; sourceTree = "<group>"; };
-		64EAD58F24807ECF00F42016 /* TCPServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = ../../shared_src/cmdserver/TCPServer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,19 +48,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646ED27424826D650042B11C /* liblog4cplus-2.0.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646ED27024826D330042B11C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				646ED27124826D510042B11C /* log4cplus */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		646ED27224826D650042B11C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64EAD5762480293600F42016 = {
 			isa = PBXGroup;
 			children = (
-				64EAD58F24807ECF00F42016 /* TCPServer.cpp */,
-				64EAD58D24807EC900F42016 /* StandardServer.cpp */,
 				64EAD5812480293600F42016 /* PGHQAgent */,
+				646ED27024826D330042B11C /* Libs */,
 				64EAD5802480293600F42016 /* Products */,
+				646ED27224826D650042B11C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +108,7 @@
 				64EAD57B2480293600F42016 /* Sources */,
 				64EAD57C2480293600F42016 /* Frameworks */,
 				64EAD57D2480293600F42016 /* CopyFiles */,
+				646ED27624826D650042B11C /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -128,8 +157,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EAD5832480293600F42016 /* main.cpp in Sources */,
-				64EAD58E24807EC900F42016 /* StandardServer.cpp in Sources */,
-				64EAD59024807ECF00F42016 /* TCPServer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +166,7 @@
 		64EAD5842480293600F42016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -186,18 +213,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/include\"/**";
+				LIBRARY_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/libs/\"/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/include/\"/**";
 			};
 			name = Debug;
 		};
 		64EAD5852480293600F42016 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -238,10 +268,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/include\"/**";
+				LIBRARY_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/libs/\"/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"/Users/hugorodrigues/opt/projecto pgheadquartes/src/external/include/\"/**";
 			};
 			name = Release;
 		};
