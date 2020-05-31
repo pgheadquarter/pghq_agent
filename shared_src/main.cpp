@@ -1,28 +1,34 @@
-//============================================================================
-// Name        : pghq_agent.cpp
-// Author      : hugo rodrigues
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+//
+//  main.cpp
+//  PGHQAgent
+//
+//  Created by hugo rodrigues on 28/05/2020.
+//  Copyright © 2020 hugo rodrigues. All rights reserved.
+//
 
 #include <iostream>
-#include "shared_src/cmdserver/StandardServer.h"
+#include <pqxx/pqxx>
+
 #include <log4cplus/logger.h>
 #include <log4cplus/loggingmacros.h>
 #include <log4cplus/configurator.h>
 #include <log4cplus/initializer.h>
-#include "shared_src/cmdserver/StandardServer.h"
-
+#include "cmdserver/StandardServer.h"
 
 using namespace std;
 
+
+void connect()
+{
+    pqxx::connection c("postgresql://accounting@localhost/company");
+}
+
 int main(int argc, char **argv)
 {
-	cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
+    cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
 
     //start_standard_server( argc, argv);
-
+    
     // Initialization and deinitialization.
     log4cplus::Initializer initializer;
 
@@ -33,5 +39,8 @@ int main(int argc, char **argv)
     LOG4CPLUS_TEXT("main"));
     LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
 
-	return 0;
+    
+    
+    
+    return 0;
 }
