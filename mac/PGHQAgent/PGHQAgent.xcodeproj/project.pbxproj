@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6451553C2483233900FD1161 /* libpqxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6451552F2483233800FD1161 /* libpqxx.a */; };
-		6451553D2483233900FD1161 /* libpq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645155312483233800FD1161 /* libpq.dylib */; };
-		6451553E2483233900FD1161 /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645155332483233800FD1161 /* libpq.a */; };
 		6451553F2483233900FD1161 /* liblog4cplus-2.0.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645155362483233800FD1161 /* liblog4cplus-2.0.3.dylib */; };
 		645155412483236000FD1161 /* liblog4cplus-2.0.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 645155362483233800FD1161 /* liblog4cplus-2.0.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		645155422483236300FD1161 /* libpq.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 645155312483233800FD1161 /* libpq.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		64C4BC812483C30B000B90B4 /* libpqxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7D2483C30B000B90B4 /* libpqxx.a */; };
+		64C4BC822483C30B000B90B4 /* libpq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7E2483C30B000B90B4 /* libpq.dylib */; };
+		64C4BC832483C30B000B90B4 /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC802483C30B000B90B4 /* libpq.a */; };
 		64F2A5AE2482814100C9293B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5A82482814100C9293B /* main.cpp */; };
 		64F2A5AF2482814100C9293B /* StandardServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5AB2482814100C9293B /* StandardServer.cpp */; };
 		64F2A5B02482814100C9293B /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5AC2482814100C9293B /* TCPServer.cpp */; };
@@ -26,7 +25,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				645155412483236000FD1161 /* liblog4cplus-2.0.3.dylib in Embed Libraries */,
-				645155422483236300FD1161 /* libpq.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,16 +41,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6451552E2483233800FD1161 /* libpqxx.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpqxx.lai; sourceTree = "<group>"; };
-		6451552F2483233800FD1161 /* libpqxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpqxx.a; sourceTree = "<group>"; };
-		645155302483233800FD1161 /* libpqxx.la */ = {isa = PBXFileReference; lastKnownFileType = file; path = libpqxx.la; sourceTree = "<group>"; };
-		645155312483233800FD1161 /* libpq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.dylib; sourceTree = "<group>"; };
-		645155332483233800FD1161 /* libpq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpq.a; sourceTree = "<group>"; };
 		645155362483233800FD1161 /* liblog4cplus-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "liblog4cplus-2.0.3.dylib"; sourceTree = "<group>"; };
 		645155372483233800FD1161 /* liblog4cplusU.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liblog4cplusU.lai; sourceTree = "<group>"; };
 		645155382483233800FD1161 /* liblog4cplusU-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "liblog4cplusU-2.0.3.dylib"; sourceTree = "<group>"; };
 		645155392483233800FD1161 /* liblog4cplus.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liblog4cplus.lai; sourceTree = "<group>"; };
 		646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liblog4cplus-2.0.3.dylib"; path = "../../../external/libs/log4cplus/liblog4cplus-2.0.3.dylib"; sourceTree = "<group>"; };
+		64C4BC7C2483C30B000B90B4 /* libpqxx.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpqxx.lai; sourceTree = "<group>"; };
+		64C4BC7D2483C30B000B90B4 /* libpqxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpqxx.a; sourceTree = "<group>"; };
+		64C4BC7E2483C30B000B90B4 /* libpq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.dylib; sourceTree = "<group>"; };
+		64C4BC7F2483C30B000B90B4 /* libpqxx.la */ = {isa = PBXFileReference; lastKnownFileType = file; path = libpqxx.la; sourceTree = "<group>"; };
+		64C4BC802483C30B000B90B4 /* libpq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpq.a; sourceTree = "<group>"; };
 		64EAD57F2480293600F42016 /* PGHQAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PGHQAgent; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F2A5A82482814100C9293B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		64F2A5AA2482814100C9293B /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
@@ -67,45 +65,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C4BC812483C30B000B90B4 /* libpqxx.a in Frameworks */,
+				64C4BC822483C30B000B90B4 /* libpq.dylib in Frameworks */,
+				64C4BC832483C30B000B90B4 /* libpq.a in Frameworks */,
 				6451553F2483233900FD1161 /* liblog4cplus-2.0.3.dylib in Frameworks */,
-				6451553E2483233900FD1161 /* libpq.a in Frameworks */,
-				6451553C2483233900FD1161 /* libpqxx.a in Frameworks */,
-				6451553D2483233900FD1161 /* libpq.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6451552C2483233800FD1161 /* pqxx */ = {
-			isa = PBXGroup;
-			children = (
-				6451552D2483233800FD1161 /* mac */,
-				645155312483233800FD1161 /* libpq.dylib */,
-				645155322483233800FD1161 /* linux */,
-				645155332483233800FD1161 /* libpq.a */,
-			);
-			name = pqxx;
-			path = ../../../external/libs/pqxx;
-			sourceTree = "<group>";
-		};
-		6451552D2483233800FD1161 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				6451552E2483233800FD1161 /* libpqxx.lai */,
-				6451552F2483233800FD1161 /* libpqxx.a */,
-				645155302483233800FD1161 /* libpqxx.la */,
-			);
-			path = mac;
-			sourceTree = "<group>";
-		};
-		645155322483233800FD1161 /* linux */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = linux;
-			sourceTree = "<group>";
-		};
 		645155342483233800FD1161 /* log4cplus */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,8 +114,8 @@
 		646ED27024826D330042B11C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				64C4BC792483C30B000B90B4 /* pqxx */,
 				645155342483233800FD1161 /* log4cplus */,
-				6451552C2483233800FD1161 /* pqxx */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -158,6 +127,35 @@
 				646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C4BC792483C30B000B90B4 /* pqxx */ = {
+			isa = PBXGroup;
+			children = (
+				64C4BC7A2483C30B000B90B4 /* centos */,
+				64C4BC7B2483C30B000B90B4 /* mac */,
+			);
+			name = pqxx;
+			path = ../../../external/libs/pqxx;
+			sourceTree = "<group>";
+		};
+		64C4BC7A2483C30B000B90B4 /* centos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = centos;
+			sourceTree = "<group>";
+		};
+		64C4BC7B2483C30B000B90B4 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				64C4BC7C2483C30B000B90B4 /* libpqxx.lai */,
+				64C4BC7D2483C30B000B90B4 /* libpqxx.a */,
+				64C4BC7E2483C30B000B90B4 /* libpq.dylib */,
+				64C4BC7F2483C30B000B90B4 /* libpqxx.la */,
+				64C4BC802483C30B000B90B4 /* libpq.a */,
+			);
+			path = mac;
 			sourceTree = "<group>";
 		};
 		64EAD5762480293600F42016 = {
