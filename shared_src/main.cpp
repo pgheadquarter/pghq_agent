@@ -23,6 +23,10 @@ void connect()
     pqxx::connection c("postgresql://accounting@localhost/company");
 }
 
+
+
+
+
 int main(int argc, char **argv)
 {
     cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
@@ -38,8 +42,6 @@ int main(int argc, char **argv)
     log4cplus::Logger logger = log4cplus::Logger::getInstance(
     LOG4CPLUS_TEXT("main"));
     LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
-
-    
     
     
     return 0;

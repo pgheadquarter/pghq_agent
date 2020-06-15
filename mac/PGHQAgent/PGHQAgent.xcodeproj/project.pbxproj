@@ -12,6 +12,11 @@
 		64C4BC812483C30B000B90B4 /* libpqxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7D2483C30B000B90B4 /* libpqxx.a */; };
 		64C4BC822483C30B000B90B4 /* libpq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7E2483C30B000B90B4 /* libpq.dylib */; };
 		64C4BC832483C30B000B90B4 /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC802483C30B000B90B4 /* libpq.a */; };
+		64EE32EE248BA24F00821865 /* OSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EE32E2248BA24F00821865 /* OSManager.cpp */; };
+		64EE32EF248BA24F00821865 /* LinuxTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EE32E6248BA24F00821865 /* LinuxTablespaceManager.cpp */; };
+		64EE32F0248BA24F00821865 /* MacTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EE32E7248BA24F00821865 /* MacTablespaceManager.cpp */; };
+		64EE32F1248BA24F00821865 /* TablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EE32E9248BA24F00821865 /* TablespaceManager.cpp */; };
+		64EE32F2248BA24F00821865 /* ExecRes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64EE32ED248BA24F00821865 /* ExecRes.cpp */; };
 		64F2A5AE2482814100C9293B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5A82482814100C9293B /* main.cpp */; };
 		64F2A5AF2482814100C9293B /* StandardServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5AB2482814100C9293B /* StandardServer.cpp */; };
 		64F2A5B02482814100C9293B /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F2A5AC2482814100C9293B /* TCPServer.cpp */; };
@@ -52,6 +57,16 @@
 		64C4BC7F2483C30B000B90B4 /* libpqxx.la */ = {isa = PBXFileReference; lastKnownFileType = file; path = libpqxx.la; sourceTree = "<group>"; };
 		64C4BC802483C30B000B90B4 /* libpq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpq.a; sourceTree = "<group>"; };
 		64EAD57F2480293600F42016 /* PGHQAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PGHQAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EE32E2248BA24F00821865 /* OSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSManager.cpp; sourceTree = "<group>"; };
+		64EE32E3248BA24F00821865 /* OSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSManager.h; sourceTree = "<group>"; };
+		64EE32E5248BA24F00821865 /* TablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablespaceManager.h; sourceTree = "<group>"; };
+		64EE32E6248BA24F00821865 /* LinuxTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxTablespaceManager.cpp; sourceTree = "<group>"; };
+		64EE32E7248BA24F00821865 /* MacTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MacTablespaceManager.cpp; sourceTree = "<group>"; };
+		64EE32E8248BA24F00821865 /* LinuxTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinuxTablespaceManager.h; sourceTree = "<group>"; };
+		64EE32E9248BA24F00821865 /* TablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TablespaceManager.cpp; sourceTree = "<group>"; };
+		64EE32EA248BA24F00821865 /* MacTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTablespaceManager.h; sourceTree = "<group>"; };
+		64EE32EC248BA24F00821865 /* ExecRes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecRes.h; sourceTree = "<group>"; };
+		64EE32ED248BA24F00821865 /* ExecRes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExecRes.cpp; sourceTree = "<group>"; };
 		64F2A5A82482814100C9293B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		64F2A5AA2482814100C9293B /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
 		64F2A5AB2482814100C9293B /* StandardServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandardServer.cpp; sourceTree = "<group>"; };
@@ -184,9 +199,43 @@
 			path = PGHQAgent;
 			sourceTree = "<group>";
 		};
+		64EE32E1248BA24F00821865 /* os */ = {
+			isa = PBXGroup;
+			children = (
+				64EE32E2248BA24F00821865 /* OSManager.cpp */,
+				64EE32E3248BA24F00821865 /* OSManager.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		64EE32E4248BA24F00821865 /* tblmem */ = {
+			isa = PBXGroup;
+			children = (
+				64EE32E5248BA24F00821865 /* TablespaceManager.h */,
+				64EE32E6248BA24F00821865 /* LinuxTablespaceManager.cpp */,
+				64EE32E7248BA24F00821865 /* MacTablespaceManager.cpp */,
+				64EE32E8248BA24F00821865 /* LinuxTablespaceManager.h */,
+				64EE32E9248BA24F00821865 /* TablespaceManager.cpp */,
+				64EE32EA248BA24F00821865 /* MacTablespaceManager.h */,
+			);
+			path = tblmem;
+			sourceTree = "<group>";
+		};
+		64EE32EB248BA24F00821865 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				64EE32EC248BA24F00821865 /* ExecRes.h */,
+				64EE32ED248BA24F00821865 /* ExecRes.cpp */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
 		64F2A5A72482814100C9293B /* shared_src */ = {
 			isa = PBXGroup;
 			children = (
+				64EE32E1248BA24F00821865 /* os */,
+				64EE32EB248BA24F00821865 /* structs */,
+				64EE32E4248BA24F00821865 /* tblmem */,
 				64F2A5A82482814100C9293B /* main.cpp */,
 				64F2A5A92482814100C9293B /* cmdserver */,
 			);
@@ -264,8 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F2A5AE2482814100C9293B /* main.cpp in Sources */,
+				64EE32F1248BA24F00821865 /* TablespaceManager.cpp in Sources */,
+				64EE32F0248BA24F00821865 /* MacTablespaceManager.cpp in Sources */,
+				64EE32F2248BA24F00821865 /* ExecRes.cpp in Sources */,
 				64F2A5AF2482814100C9293B /* StandardServer.cpp in Sources */,
 				64F2A5B02482814100C9293B /* TCPServer.cpp in Sources */,
+				64EE32EE248BA24F00821865 /* OSManager.cpp in Sources */,
+				64EE32EF248BA24F00821865 /* LinuxTablespaceManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
