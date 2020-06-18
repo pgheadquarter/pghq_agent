@@ -7,12 +7,18 @@
 
 #include "OSManager.h"
 
-OSManager::OSManager() {
-	// TODO Auto-generated constructor stub
-
+/**
+ * OSManager
+ */
+OSManager::OSManager()
+{
 }
 
-OSManager::~OSManager() {
-	// TODO Auto-generated destructor stub
+/**
+ *
+ */
+OSManager::~OSManager()
+{
+
 }
 

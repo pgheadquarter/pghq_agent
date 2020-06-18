@@ -14,6 +14,8 @@
 #include <log4cplus/configurator.h>
 #include <log4cplus/initializer.h>
 #include "cmdserver/StandardServer.h"
+#include "config/AgentConfig.h"
+
 
 using namespace std;
 
@@ -26,10 +28,11 @@ void connect()
 
 
 
-
 int main(int argc, char **argv)
 {
     cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
+
+
 
     //start_standard_server( argc, argv);
     
@@ -43,6 +46,8 @@ int main(int argc, char **argv)
     LOG4CPLUS_TEXT("main"));
     LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
     
-    
+    global_config.initialize();
+
+
     return 0;
 }

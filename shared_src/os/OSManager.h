@@ -12,7 +12,7 @@
 
 
 /**
- *
+ * class OSManager
  */
 class OSManager
 {
@@ -20,8 +20,6 @@ class OSManager
 public:
 	OSManager();
 	virtual ~OSManager();
-
-
 
 };
 
