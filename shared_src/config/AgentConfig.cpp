@@ -9,9 +9,13 @@
 #include <iostream>
 #include <fstream>
 #include "../constants/constants.h"
-#include "nlohmann/json.hpp"
+#include <string>
+#include <array>
 
 using namespace std;
+//#include <tao/json.hpp>
+#include <nlohmann/json.hpp>
+
 using namespace nlohmann;
 
 //

@@ -8,7 +8,7 @@
 #ifndef SHARED_SRC_TBLMEM_TABLESPACEMANAGER_H_
 #define SHARED_SRC_TBLMEM_TABLESPACEMANAGER_H_
 
-
+#include <string>
 #include "../structs/ExecRes.h"
 
 
