@@ -50,12 +50,16 @@
                                     <listOptionValue builtIn="false" value="pq"/>
                                     									
                                     <listOptionValue builtIn="false" value="pqxx"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="boost_thread"/>
                                     								
                                 </option>
                                 								
                                 <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="macosx.cpp.link.option.paths.694060933" name="Library search path (-L)" superClass="macosx.cpp.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/external/libs/pqxx/mac}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/external/libs/boost/mac/lib}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/external/libs/log4cplus/mac}&quot;"/>
                                     								

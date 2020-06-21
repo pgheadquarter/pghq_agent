@@ -15,6 +15,7 @@
 #include <log4cplus/initializer.h>
 #include "cmdserver/StandardServer.h"
 #include "config/AgentConfig.h"
+#include "job/IDbConnMonitorJob.h"
 
 
 using namespace std;
@@ -32,21 +33,25 @@ int main(int argc, char **argv)
 {
     cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
 
-
-
     //start_standard_server( argc, argv);
     
     // Initialization and deinitialization.
-    log4cplus::Initializer initializer;
+    //log4cplus::Initializer initializer;
 
-    log4cplus::BasicConfigurator config;
-    config.configure();
+    //log4cplus::BasicConfigurator config;
+    //config.configure();
 
-    log4cplus::Logger logger = log4cplus::Logger::getInstance(
-    LOG4CPLUS_TEXT("main"));
-    LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
+    //log4cplus::Logger logger = log4cplus::Logger::getInstance(
+    //LOG4CPLUS_TEXT("main"));
+    //LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
     
-    global_config.initialize();
+    //global_config.initialize();
+
+
+    IDbConnMonitorJob cj("Job1");
+
+    cj.start();
+    cj.join();
 
 
     return 0;
