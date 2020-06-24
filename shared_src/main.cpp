@@ -16,9 +16,14 @@
 #include "cmdserver/StandardServer.h"
 #include "config/AgentConfig.h"
 #include "job/IDbConnMonitorJob.h"
+#include "log/XLog.h"
+
+
+#include <boost/chrono.hpp>
 
 
 using namespace std;
+using namespace boost::chrono;
 
 
 void connect()
@@ -28,31 +33,40 @@ void connect()
 
 
 
+string now()
+{
+	 auto t  = std::time(nullptr);
+	 auto tm = *std::localtime(&t);
 
+	 std::ostringstream oss;
+	 oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S %z");
+	 return oss.str();
+}
+
+
+
+
+/**
+ * main
+ */
 int main(int argc, char **argv)
 {
     cout << "PGHQ AGENT" << endl; // prints !!!Hello World!!!
 
     //start_standard_server( argc, argv);
     
-    // Initialization and deinitialization.
-    //log4cplus::Initializer initializer;
-
-    //log4cplus::BasicConfigurator config;
-    //config.configure();
-
-    //log4cplus::Logger logger = log4cplus::Logger::getInstance(
-    //LOG4CPLUS_TEXT("main"));
-    //LOG4CPLUS_WARN(logger, LOG4CPLUS_TEXT("Hello, World!"));
-    
     //global_config.initialize();
 
+    global_log.info("info test");
+    global_log.warn("err test");
+    global_log.err("err test");
+
+    cout << now() << endl;
 
     IDbConnMonitorJob cj("Job1");
 
     cj.start();
     cj.join();
-
 
     return 0;
 }
