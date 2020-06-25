@@ -30,7 +30,7 @@ private:
 
 
 public:
-	FileStoreManager( const string & base_dir, const string & file_suffix );
+	FileStoreManager( const string & base_dir, const string & file_suffix, int del_days_behind=8 );
 	virtual ~FileStoreManager();
 
 

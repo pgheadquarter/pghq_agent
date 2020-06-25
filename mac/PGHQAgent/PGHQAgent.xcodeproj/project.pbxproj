@@ -11,21 +11,23 @@
 		6409BD4F24A00ECB00CDC0DC /* libboost_thread.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 6409BBDC24A00E5700CDC0DC /* libboost_thread.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6451553F2483233900FD1161 /* liblog4cplus-2.0.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645155362483233800FD1161 /* liblog4cplus-2.0.3.dylib */; };
 		645155412483236000FD1161 /* liblog4cplus-2.0.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 645155362483233800FD1161 /* liblog4cplus-2.0.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6456754D24A4E79A00BA5E15 /* LinuxTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456751F24A4E79A00BA5E15 /* LinuxTablespaceManager.cpp */; };
+		6456754E24A4E79A00BA5E15 /* MacTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456752024A4E79A00BA5E15 /* MacTablespaceManager.cpp */; };
+		6456754F24A4E79A00BA5E15 /* TablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456752224A4E79A00BA5E15 /* TablespaceManager.cpp */; };
+		6456755024A4E79A00BA5E15 /* DBConnUnitTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456752524A4E79A00BA5E15 /* DBConnUnitTests.cpp */; };
+		6456755124A4E79A00BA5E15 /* AgentConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456752824A4E79A00BA5E15 /* AgentConfig.cpp */; };
+		6456755224A4E79A00BA5E15 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 6456752D24A4E79A00BA5E15 /* sqlite3.c */; };
+		6456755324A4E79A00BA5E15 /* FileStoreManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456753124A4E79A00BA5E15 /* FileStoreManager.cpp */; };
+		6456755424A4E79A00BA5E15 /* ExecRes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456753524A4E79A00BA5E15 /* ExecRes.cpp */; };
+		6456755524A4E79A00BA5E15 /* IDbConnMonitorJob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456753A24A4E79A00BA5E15 /* IDbConnMonitorJob.cpp */; };
+		6456755624A4E79A00BA5E15 /* PGConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456753E24A4E79A00BA5E15 /* PGConnection.cpp */; };
+		6456755724A4E79A00BA5E15 /* XLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456754024A4E79A00BA5E15 /* XLog.cpp */; };
+		6456755824A4E79A00BA5E15 /* OSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456754324A4E79A00BA5E15 /* OSManager.cpp */; };
+		6456755924A4E79A00BA5E15 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456754724A4E79A00BA5E15 /* main.cpp */; };
+		6456755A24A4E79A00BA5E15 /* StandardServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456754A24A4E79A00BA5E15 /* StandardServer.cpp */; };
+		6456755B24A4E79A00BA5E15 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6456754B24A4E79A00BA5E15 /* TCPServer.cpp */; };
 		64C4BC812483C30B000B90B4 /* libpqxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7D2483C30B000B90B4 /* libpqxx.a */; };
 		64C4BC822483C30B000B90B4 /* libpq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C4BC7E2483C30B000B90B4 /* libpq.dylib */; };
-		64E75D5024A2B0600039E745 /* LinuxTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D2924A2B0600039E745 /* LinuxTablespaceManager.cpp */; };
-		64E75D5124A2B0600039E745 /* MacTablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D2A24A2B0600039E745 /* MacTablespaceManager.cpp */; };
-		64E75D5224A2B0600039E745 /* TablespaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D2C24A2B0600039E745 /* TablespaceManager.cpp */; };
-		64E75D5324A2B0600039E745 /* DBConnUnitTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D2F24A2B0600039E745 /* DBConnUnitTests.cpp */; };
-		64E75D5424A2B0600039E745 /* AgentConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D3224A2B0600039E745 /* AgentConfig.cpp */; };
-		64E75D5524A2B0600039E745 /* ExecRes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D3824A2B0600039E745 /* ExecRes.cpp */; };
-		64E75D5624A2B0600039E745 /* IDbConnMonitorJob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D3D24A2B0600039E745 /* IDbConnMonitorJob.cpp */; };
-		64E75D5724A2B0600039E745 /* PGConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4124A2B0600039E745 /* PGConnection.cpp */; };
-		64E75D5824A2B0600039E745 /* XLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4324A2B0600039E745 /* XLog.cpp */; };
-		64E75D5924A2B0600039E745 /* OSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4624A2B0600039E745 /* OSManager.cpp */; };
-		64E75D5A24A2B0600039E745 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4A24A2B0600039E745 /* main.cpp */; };
-		64E75D5B24A2B0600039E745 /* StandardServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4D24A2B0600039E745 /* StandardServer.cpp */; };
-		64E75D5C24A2B0600039E745 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64E75D4E24A2B0600039E745 /* TCPServer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -306,41 +308,46 @@
 		645155372483233800FD1161 /* liblog4cplusU.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liblog4cplusU.lai; sourceTree = "<group>"; };
 		645155382483233800FD1161 /* liblog4cplusU-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "liblog4cplusU-2.0.3.dylib"; sourceTree = "<group>"; };
 		645155392483233800FD1161 /* liblog4cplus.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liblog4cplus.lai; sourceTree = "<group>"; };
+		6456751E24A4E79A00BA5E15 /* TablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablespaceManager.h; sourceTree = "<group>"; };
+		6456751F24A4E79A00BA5E15 /* LinuxTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxTablespaceManager.cpp; sourceTree = "<group>"; };
+		6456752024A4E79A00BA5E15 /* MacTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MacTablespaceManager.cpp; sourceTree = "<group>"; };
+		6456752124A4E79A00BA5E15 /* LinuxTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinuxTablespaceManager.h; sourceTree = "<group>"; };
+		6456752224A4E79A00BA5E15 /* TablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TablespaceManager.cpp; sourceTree = "<group>"; };
+		6456752324A4E79A00BA5E15 /* MacTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTablespaceManager.h; sourceTree = "<group>"; };
+		6456752524A4E79A00BA5E15 /* DBConnUnitTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBConnUnitTests.cpp; sourceTree = "<group>"; };
+		6456752624A4E79A00BA5E15 /* DBConnUnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnUnitTests.h; sourceTree = "<group>"; };
+		6456752824A4E79A00BA5E15 /* AgentConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AgentConfig.cpp; sourceTree = "<group>"; };
+		6456752924A4E79A00BA5E15 /* AgentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgentConfig.h; sourceTree = "<group>"; };
+		6456752B24A4E79A00BA5E15 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		6456752D24A4E79A00BA5E15 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		6456752E24A4E79A00BA5E15 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		6456752F24A4E79A00BA5E15 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		6456753124A4E79A00BA5E15 /* FileStoreManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileStoreManager.cpp; sourceTree = "<group>"; };
+		6456753224A4E79A00BA5E15 /* FileStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStoreManager.h; sourceTree = "<group>"; };
+		6456753424A4E79A00BA5E15 /* ExecRes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecRes.h; sourceTree = "<group>"; };
+		6456753524A4E79A00BA5E15 /* ExecRes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExecRes.cpp; sourceTree = "<group>"; };
+		6456753724A4E79A00BA5E15 /* IJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJob.h; sourceTree = "<group>"; };
+		6456753924A4E79A00BA5E15 /* ConnMonitorParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnMonitorParams.h; sourceTree = "<group>"; };
+		6456753A24A4E79A00BA5E15 /* IDbConnMonitorJob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDbConnMonitorJob.cpp; sourceTree = "<group>"; };
+		6456753B24A4E79A00BA5E15 /* IDbConnMonitorJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDbConnMonitorJob.h; sourceTree = "<group>"; };
+		6456753D24A4E79A00BA5E15 /* PGConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGConnection.h; sourceTree = "<group>"; };
+		6456753E24A4E79A00BA5E15 /* PGConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PGConnection.cpp; sourceTree = "<group>"; };
+		6456754024A4E79A00BA5E15 /* XLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XLog.cpp; sourceTree = "<group>"; };
+		6456754124A4E79A00BA5E15 /* XLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLog.h; sourceTree = "<group>"; };
+		6456754324A4E79A00BA5E15 /* OSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSManager.cpp; sourceTree = "<group>"; };
+		6456754424A4E79A00BA5E15 /* OSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSManager.h; sourceTree = "<group>"; };
+		6456754624A4E79A00BA5E15 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		6456754724A4E79A00BA5E15 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6456754924A4E79A00BA5E15 /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
+		6456754A24A4E79A00BA5E15 /* StandardServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandardServer.cpp; sourceTree = "<group>"; };
+		6456754B24A4E79A00BA5E15 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCPServer.cpp; sourceTree = "<group>"; };
+		6456754C24A4E79A00BA5E15 /* StandardServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardServer.h; sourceTree = "<group>"; };
 		646ED27324826D650042B11C /* liblog4cplus-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liblog4cplus-2.0.3.dylib"; path = "../../../external/libs/log4cplus/liblog4cplus-2.0.3.dylib"; sourceTree = "<group>"; };
 		64C4BC7C2483C30B000B90B4 /* libpqxx.lai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpqxx.lai; sourceTree = "<group>"; };
 		64C4BC7D2483C30B000B90B4 /* libpqxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpqxx.a; sourceTree = "<group>"; };
 		64C4BC7E2483C30B000B90B4 /* libpq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpq.dylib; sourceTree = "<group>"; };
 		64C4BC7F2483C30B000B90B4 /* libpqxx.la */ = {isa = PBXFileReference; lastKnownFileType = file; path = libpqxx.la; sourceTree = "<group>"; };
 		64C4BC802483C30B000B90B4 /* libpq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpq.a; sourceTree = "<group>"; };
-		64E75D2824A2B0600039E745 /* TablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablespaceManager.h; sourceTree = "<group>"; };
-		64E75D2924A2B0600039E745 /* LinuxTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxTablespaceManager.cpp; sourceTree = "<group>"; };
-		64E75D2A24A2B0600039E745 /* MacTablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MacTablespaceManager.cpp; sourceTree = "<group>"; };
-		64E75D2B24A2B0600039E745 /* LinuxTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinuxTablespaceManager.h; sourceTree = "<group>"; };
-		64E75D2C24A2B0600039E745 /* TablespaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TablespaceManager.cpp; sourceTree = "<group>"; };
-		64E75D2D24A2B0600039E745 /* MacTablespaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacTablespaceManager.h; sourceTree = "<group>"; };
-		64E75D2F24A2B0600039E745 /* DBConnUnitTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBConnUnitTests.cpp; sourceTree = "<group>"; };
-		64E75D3024A2B0600039E745 /* DBConnUnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnUnitTests.h; sourceTree = "<group>"; };
-		64E75D3224A2B0600039E745 /* AgentConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AgentConfig.cpp; sourceTree = "<group>"; };
-		64E75D3324A2B0600039E745 /* AgentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgentConfig.h; sourceTree = "<group>"; };
-		64E75D3524A2B0600039E745 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
-		64E75D3724A2B0600039E745 /* ExecRes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExecRes.h; sourceTree = "<group>"; };
-		64E75D3824A2B0600039E745 /* ExecRes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExecRes.cpp; sourceTree = "<group>"; };
-		64E75D3A24A2B0600039E745 /* IJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJob.h; sourceTree = "<group>"; };
-		64E75D3C24A2B0600039E745 /* ConnMonitorParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnMonitorParams.h; sourceTree = "<group>"; };
-		64E75D3D24A2B0600039E745 /* IDbConnMonitorJob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDbConnMonitorJob.cpp; sourceTree = "<group>"; };
-		64E75D3E24A2B0600039E745 /* IDbConnMonitorJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDbConnMonitorJob.h; sourceTree = "<group>"; };
-		64E75D4024A2B0600039E745 /* PGConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGConnection.h; sourceTree = "<group>"; };
-		64E75D4124A2B0600039E745 /* PGConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PGConnection.cpp; sourceTree = "<group>"; };
-		64E75D4324A2B0600039E745 /* XLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XLog.cpp; sourceTree = "<group>"; };
-		64E75D4424A2B0600039E745 /* XLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLog.h; sourceTree = "<group>"; };
-		64E75D4624A2B0600039E745 /* OSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSManager.cpp; sourceTree = "<group>"; };
-		64E75D4724A2B0600039E745 /* OSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSManager.h; sourceTree = "<group>"; };
-		64E75D4924A2B0600039E745 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
-		64E75D4A24A2B0600039E745 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		64E75D4C24A2B0600039E745 /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
-		64E75D4D24A2B0600039E745 /* StandardServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandardServer.cpp; sourceTree = "<group>"; };
-		64E75D4E24A2B0600039E745 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCPServer.cpp; sourceTree = "<group>"; };
-		64E75D4F24A2B0600039E745 /* StandardServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardServer.h; sourceTree = "<group>"; };
 		64EAD57F2480293600F42016 /* PGHQAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PGHQAgent; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F2A5B1248319A900C9293B /* liblog4cplus-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liblog4cplus-2.0.3.dylib"; path = "../../../external/libs/log4cplus/mac/liblog4cplus-2.0.3.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1061,6 +1068,160 @@
 			path = win32;
 			sourceTree = "<group>";
 		};
+		6456751C24A4E79A00BA5E15 /* shared_src */ = {
+			isa = PBXGroup;
+			children = (
+				6456751D24A4E79A00BA5E15 /* tblmem */,
+				6456752424A4E79A00BA5E15 /* unit_tests */,
+				6456752724A4E79A00BA5E15 /* config */,
+				6456752A24A4E79A00BA5E15 /* constants */,
+				6456752C24A4E79A00BA5E15 /* sqlite */,
+				6456753024A4E79A00BA5E15 /* storage */,
+				6456753324A4E79A00BA5E15 /* structs */,
+				6456753624A4E79A00BA5E15 /* job */,
+				6456753C24A4E79A00BA5E15 /* db */,
+				6456753F24A4E79A00BA5E15 /* log */,
+				6456754224A4E79A00BA5E15 /* os */,
+				6456754524A4E79A00BA5E15 /* thread */,
+				6456754724A4E79A00BA5E15 /* main.cpp */,
+				6456754824A4E79A00BA5E15 /* cmdserver */,
+			);
+			name = shared_src;
+			path = ../../../shared_src;
+			sourceTree = "<group>";
+		};
+		6456751D24A4E79A00BA5E15 /* tblmem */ = {
+			isa = PBXGroup;
+			children = (
+				6456751E24A4E79A00BA5E15 /* TablespaceManager.h */,
+				6456751F24A4E79A00BA5E15 /* LinuxTablespaceManager.cpp */,
+				6456752024A4E79A00BA5E15 /* MacTablespaceManager.cpp */,
+				6456752124A4E79A00BA5E15 /* LinuxTablespaceManager.h */,
+				6456752224A4E79A00BA5E15 /* TablespaceManager.cpp */,
+				6456752324A4E79A00BA5E15 /* MacTablespaceManager.h */,
+			);
+			path = tblmem;
+			sourceTree = "<group>";
+		};
+		6456752424A4E79A00BA5E15 /* unit_tests */ = {
+			isa = PBXGroup;
+			children = (
+				6456752524A4E79A00BA5E15 /* DBConnUnitTests.cpp */,
+				6456752624A4E79A00BA5E15 /* DBConnUnitTests.h */,
+			);
+			path = unit_tests;
+			sourceTree = "<group>";
+		};
+		6456752724A4E79A00BA5E15 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				6456752824A4E79A00BA5E15 /* AgentConfig.cpp */,
+				6456752924A4E79A00BA5E15 /* AgentConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		6456752A24A4E79A00BA5E15 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				6456752B24A4E79A00BA5E15 /* constants.h */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		6456752C24A4E79A00BA5E15 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				6456752D24A4E79A00BA5E15 /* sqlite3.c */,
+				6456752E24A4E79A00BA5E15 /* sqlite3.h */,
+				6456752F24A4E79A00BA5E15 /* sqlite3ext.h */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		6456753024A4E79A00BA5E15 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				6456753124A4E79A00BA5E15 /* FileStoreManager.cpp */,
+				6456753224A4E79A00BA5E15 /* FileStoreManager.h */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		6456753324A4E79A00BA5E15 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				6456753424A4E79A00BA5E15 /* ExecRes.h */,
+				6456753524A4E79A00BA5E15 /* ExecRes.cpp */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
+		6456753624A4E79A00BA5E15 /* job */ = {
+			isa = PBXGroup;
+			children = (
+				6456753724A4E79A00BA5E15 /* IJob.h */,
+				6456753824A4E79A00BA5E15 /* connmonitor */,
+				6456753A24A4E79A00BA5E15 /* IDbConnMonitorJob.cpp */,
+				6456753B24A4E79A00BA5E15 /* IDbConnMonitorJob.h */,
+			);
+			path = job;
+			sourceTree = "<group>";
+		};
+		6456753824A4E79A00BA5E15 /* connmonitor */ = {
+			isa = PBXGroup;
+			children = (
+				6456753924A4E79A00BA5E15 /* ConnMonitorParams.h */,
+			);
+			path = connmonitor;
+			sourceTree = "<group>";
+		};
+		6456753C24A4E79A00BA5E15 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				6456753D24A4E79A00BA5E15 /* PGConnection.h */,
+				6456753E24A4E79A00BA5E15 /* PGConnection.cpp */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		6456753F24A4E79A00BA5E15 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				6456754024A4E79A00BA5E15 /* XLog.cpp */,
+				6456754124A4E79A00BA5E15 /* XLog.h */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		6456754224A4E79A00BA5E15 /* os */ = {
+			isa = PBXGroup;
+			children = (
+				6456754324A4E79A00BA5E15 /* OSManager.cpp */,
+				6456754424A4E79A00BA5E15 /* OSManager.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		6456754524A4E79A00BA5E15 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				6456754624A4E79A00BA5E15 /* Thread.h */,
+			);
+			path = thread;
+			sourceTree = "<group>";
+		};
+		6456754824A4E79A00BA5E15 /* cmdserver */ = {
+			isa = PBXGroup;
+			children = (
+				6456754924A4E79A00BA5E15 /* TCPServer.h */,
+				6456754A24A4E79A00BA5E15 /* StandardServer.cpp */,
+				6456754B24A4E79A00BA5E15 /* TCPServer.cpp */,
+				6456754C24A4E79A00BA5E15 /* StandardServer.h */,
+			);
+			path = cmdserver;
+			sourceTree = "<group>";
+		};
 		646ED27024826D330042B11C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -1109,139 +1270,6 @@
 			path = mac;
 			sourceTree = "<group>";
 		};
-		64E75D2624A2B0600039E745 /* shared_src */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D2724A2B0600039E745 /* tblmem */,
-				64E75D2E24A2B0600039E745 /* unit_tests */,
-				64E75D3124A2B0600039E745 /* config */,
-				64E75D3424A2B0600039E745 /* constants */,
-				64E75D3624A2B0600039E745 /* structs */,
-				64E75D3924A2B0600039E745 /* job */,
-				64E75D3F24A2B0600039E745 /* db */,
-				64E75D4224A2B0600039E745 /* log */,
-				64E75D4524A2B0600039E745 /* os */,
-				64E75D4824A2B0600039E745 /* thread */,
-				64E75D4A24A2B0600039E745 /* main.cpp */,
-				64E75D4B24A2B0600039E745 /* cmdserver */,
-			);
-			name = shared_src;
-			path = ../../../shared_src;
-			sourceTree = "<group>";
-		};
-		64E75D2724A2B0600039E745 /* tblmem */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D2824A2B0600039E745 /* TablespaceManager.h */,
-				64E75D2924A2B0600039E745 /* LinuxTablespaceManager.cpp */,
-				64E75D2A24A2B0600039E745 /* MacTablespaceManager.cpp */,
-				64E75D2B24A2B0600039E745 /* LinuxTablespaceManager.h */,
-				64E75D2C24A2B0600039E745 /* TablespaceManager.cpp */,
-				64E75D2D24A2B0600039E745 /* MacTablespaceManager.h */,
-			);
-			path = tblmem;
-			sourceTree = "<group>";
-		};
-		64E75D2E24A2B0600039E745 /* unit_tests */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D2F24A2B0600039E745 /* DBConnUnitTests.cpp */,
-				64E75D3024A2B0600039E745 /* DBConnUnitTests.h */,
-			);
-			path = unit_tests;
-			sourceTree = "<group>";
-		};
-		64E75D3124A2B0600039E745 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D3224A2B0600039E745 /* AgentConfig.cpp */,
-				64E75D3324A2B0600039E745 /* AgentConfig.h */,
-			);
-			path = config;
-			sourceTree = "<group>";
-		};
-		64E75D3424A2B0600039E745 /* constants */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D3524A2B0600039E745 /* constants.h */,
-			);
-			path = constants;
-			sourceTree = "<group>";
-		};
-		64E75D3624A2B0600039E745 /* structs */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D3724A2B0600039E745 /* ExecRes.h */,
-				64E75D3824A2B0600039E745 /* ExecRes.cpp */,
-			);
-			path = structs;
-			sourceTree = "<group>";
-		};
-		64E75D3924A2B0600039E745 /* job */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D3A24A2B0600039E745 /* IJob.h */,
-				64E75D3B24A2B0600039E745 /* connmonitor */,
-				64E75D3D24A2B0600039E745 /* IDbConnMonitorJob.cpp */,
-				64E75D3E24A2B0600039E745 /* IDbConnMonitorJob.h */,
-			);
-			path = job;
-			sourceTree = "<group>";
-		};
-		64E75D3B24A2B0600039E745 /* connmonitor */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D3C24A2B0600039E745 /* ConnMonitorParams.h */,
-			);
-			path = connmonitor;
-			sourceTree = "<group>";
-		};
-		64E75D3F24A2B0600039E745 /* db */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D4024A2B0600039E745 /* PGConnection.h */,
-				64E75D4124A2B0600039E745 /* PGConnection.cpp */,
-			);
-			path = db;
-			sourceTree = "<group>";
-		};
-		64E75D4224A2B0600039E745 /* log */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D4324A2B0600039E745 /* XLog.cpp */,
-				64E75D4424A2B0600039E745 /* XLog.h */,
-			);
-			path = log;
-			sourceTree = "<group>";
-		};
-		64E75D4524A2B0600039E745 /* os */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D4624A2B0600039E745 /* OSManager.cpp */,
-				64E75D4724A2B0600039E745 /* OSManager.h */,
-			);
-			path = os;
-			sourceTree = "<group>";
-		};
-		64E75D4824A2B0600039E745 /* thread */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D4924A2B0600039E745 /* Thread.h */,
-			);
-			path = thread;
-			sourceTree = "<group>";
-		};
-		64E75D4B24A2B0600039E745 /* cmdserver */ = {
-			isa = PBXGroup;
-			children = (
-				64E75D4C24A2B0600039E745 /* TCPServer.h */,
-				64E75D4D24A2B0600039E745 /* StandardServer.cpp */,
-				64E75D4E24A2B0600039E745 /* TCPServer.cpp */,
-				64E75D4F24A2B0600039E745 /* StandardServer.h */,
-			);
-			path = cmdserver;
-			sourceTree = "<group>";
-		};
 		64EAD5762480293600F42016 = {
 			isa = PBXGroup;
 			children = (
@@ -1263,7 +1291,7 @@
 		64EAD5812480293600F42016 /* PGHQAgent */ = {
 			isa = PBXGroup;
 			children = (
-				64E75D2624A2B0600039E745 /* shared_src */,
+				6456751C24A4E79A00BA5E15 /* shared_src */,
 			);
 			path = PGHQAgent;
 			sourceTree = "<group>";
@@ -1326,19 +1354,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E75D5824A2B0600039E745 /* XLog.cpp in Sources */,
-				64E75D5724A2B0600039E745 /* PGConnection.cpp in Sources */,
-				64E75D5C24A2B0600039E745 /* TCPServer.cpp in Sources */,
-				64E75D5024A2B0600039E745 /* LinuxTablespaceManager.cpp in Sources */,
-				64E75D5B24A2B0600039E745 /* StandardServer.cpp in Sources */,
-				64E75D5224A2B0600039E745 /* TablespaceManager.cpp in Sources */,
-				64E75D5A24A2B0600039E745 /* main.cpp in Sources */,
-				64E75D5124A2B0600039E745 /* MacTablespaceManager.cpp in Sources */,
-				64E75D5524A2B0600039E745 /* ExecRes.cpp in Sources */,
-				64E75D5624A2B0600039E745 /* IDbConnMonitorJob.cpp in Sources */,
-				64E75D5924A2B0600039E745 /* OSManager.cpp in Sources */,
-				64E75D5424A2B0600039E745 /* AgentConfig.cpp in Sources */,
-				64E75D5324A2B0600039E745 /* DBConnUnitTests.cpp in Sources */,
+				6456755624A4E79A00BA5E15 /* PGConnection.cpp in Sources */,
+				6456754D24A4E79A00BA5E15 /* LinuxTablespaceManager.cpp in Sources */,
+				6456755B24A4E79A00BA5E15 /* TCPServer.cpp in Sources */,
+				6456755224A4E79A00BA5E15 /* sqlite3.c in Sources */,
+				6456755524A4E79A00BA5E15 /* IDbConnMonitorJob.cpp in Sources */,
+				6456755324A4E79A00BA5E15 /* FileStoreManager.cpp in Sources */,
+				6456755A24A4E79A00BA5E15 /* StandardServer.cpp in Sources */,
+				6456755424A4E79A00BA5E15 /* ExecRes.cpp in Sources */,
+				6456755724A4E79A00BA5E15 /* XLog.cpp in Sources */,
+				6456754F24A4E79A00BA5E15 /* TablespaceManager.cpp in Sources */,
+				6456754E24A4E79A00BA5E15 /* MacTablespaceManager.cpp in Sources */,
+				6456755124A4E79A00BA5E15 /* AgentConfig.cpp in Sources */,
+				6456755924A4E79A00BA5E15 /* main.cpp in Sources */,
+				6456755024A4E79A00BA5E15 /* DBConnUnitTests.cpp in Sources */,
+				6456755824A4E79A00BA5E15 /* OSManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

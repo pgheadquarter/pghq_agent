@@ -7,7 +7,7 @@
 
 #include "IDbConnMonitorJob.h"
 #include <iostream>
-#include "log/XLog.h"
+#include "../log/XLog.h"
 
 
 //
@@ -66,7 +66,6 @@ void IDbConnMonitorJob::run()
 	while (m_stop_service==false)
 	{
 		// get initial time
-
 
 
 		// monitor queries time
